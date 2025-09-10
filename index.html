@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>簡単なWebサイト</title>
+  <style>
+    /* 全体リセットと基本設定 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #C0C0C0; /* 指定色に変更 */
+      color: fuchsia;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      color: #cc0000; /* 文字色を指定色に */
+    }
+
+    main h2 {
+      margin-bottom: 15px;
+      /* 色はmainで指定済みなのでここは削除 */
+    }
+
+    footer {
+      background-color: #440000; /* 指定色に変更 */
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+
+    footer a {
+      color: #4CAF50;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    私が行った場所・行きたい場所
+  </header>
+
+  <main>
+    <h2>最近行った場所</h2>
+    <p>三重県亀山市の関宿</p>
+
+    <h2>次に行きたい場所</h2>
+    <p>滋賀県の豊郷小学校旧校舎群</p>
+  </main>
+
+  <footer>
+    <p>連絡先: example@example.com</p>
+    <p>
+      <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a> |
+      <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a> |
+      <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
